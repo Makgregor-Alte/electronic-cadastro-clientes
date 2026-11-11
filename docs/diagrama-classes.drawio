@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-11T03:40:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="electronic-uml" name="Diagrama de Classes">
+    <mxGraphModel dx="1430" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="1070" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="titulo" value="&lt;b&gt;Electronic — Cadastro de Clientes&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=25;fontColor=#183153;" vertex="1" parent="1">
+          <mxGeometry x="350" y="25" width="750" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Endereco_cab" value="&lt;b&gt;Endereco&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#DCE9F7;fontSize=17;fontColor=#152536;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="110" width="425" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="Endereco_atrib" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:22px;padding-left:8px;&quot;&gt;- logradouro: String&lt;br&gt;- numero: String&lt;br&gt;- cidade: String&lt;br&gt;- uf: String&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#FFFFFF;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="55" y="152" width="425" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="Endereco_met" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:22px;padding-left:8px;&quot;&gt;+ constructor(logradouro, numero, cidade, uf)&lt;br&gt;+ get logradouro(): String&lt;br&gt;+ set logradouro(valor): void&lt;br&gt;+ get numero(): String&lt;br&gt;+ set numero(valor): void&lt;br&gt;+ get cidade(): String&lt;br&gt;+ set cidade(valor): void&lt;br&gt;+ get uf(): String&lt;br&gt;+ set uf(valor): void&lt;br&gt;+ toJSON(): Object&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#FFFFFF;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="55" y="264" width="425" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Pessoa_cab" value="&lt;b&gt;Pessoa&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#DCE9F7;fontSize=17;fontColor=#152536;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="110" width="405" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="Pessoa_atrib" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:22px;padding-left:8px;&quot;&gt;- nome: String&lt;br&gt;- endereco: Endereco&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#FFFFFF;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="600" y="152" width="405" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="Pessoa_met" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:22px;padding-left:8px;&quot;&gt;+ constructor(nome, endereco)&lt;br&gt;+ get nome(): String&lt;br&gt;+ set nome(valor): void&lt;br&gt;+ get endereco(): Endereco&lt;br&gt;+ set endereco(valor): void&lt;br&gt;# _resumoBase(): Object&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#FFFFFF;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="600" y="218" width="405" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="PessoaFisica_cab" value="&lt;b&gt;PessoaFisica&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#DCE9F7;fontSize=17;fontColor=#152536;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="620" width="450" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="PessoaFisica_atrib" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:22px;padding-left:8px;&quot;&gt;- cpf: String&lt;br&gt;- dataNascimento: String&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#FFFFFF;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="300" y="662" width="450" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="PessoaFisica_met" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:22px;padding-left:8px;&quot;&gt;+ constructor(nome, cpf, dataNascimento, endereco)&lt;br&gt;+ get cpf(): String&lt;br&gt;+ set cpf(valor): void&lt;br&gt;+ get dataNascimento(): String&lt;br&gt;+ set dataNascimento(valor): void&lt;br&gt;+ toJSON(): Object&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#FFFFFF;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="300" y="728" width="450" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="PessoaJuridica_cab" value="&lt;b&gt;PessoaJuridica&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#DCE9F7;fontSize=17;fontColor=#152536;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="855" y="620" width="490" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="PessoaJuridica_atrib" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:22px;padding-left:8px;&quot;&gt;- cnpj: String&lt;br&gt;- razaoSocial: String&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#FFFFFF;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="855" y="662" width="490" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="PessoaJuridica_met" value="&lt;div style=&quot;font-family:Arial;font-size:13px;line-height:22px;padding-left:8px;&quot;&gt;+ constructor(nome, cnpj, razaoSocial, endereco)&lt;br&gt;+ get cnpj(): String&lt;br&gt;+ set cnpj(valor): void&lt;br&gt;+ get razaoSocial(): String&lt;br&gt;+ set razaoSocial(valor): void&lt;br&gt;+ toJSON(): Object&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;strokeColor=#2B3D53;fillColor=#FFFFFF;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="855" y="728" width="490" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="heranca-pf" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;strokeWidth=2;strokeColor=#345C80;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.3;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="PessoaFisica_cab" target="Pessoa_met">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="heranca-pj" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;strokeWidth=2;strokeColor=#345C80;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.7;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="PessoaJuridica_cab" target="Pessoa_met">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="associacao-endereco" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#345C80;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Pessoa_atrib" target="Endereco_atrib" value="1         possui         1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legenda" value="&lt;font color=&quot;#555555&quot;&gt;Visibilidade UML: + público | - privado (campos # do JS) | # protegido por convenção (_)&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="55" y="1010" width="1070" height="34" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
